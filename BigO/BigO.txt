@@ -1,0 +1,82 @@
+Big O é uma notação matemática usada na análise de algoritmos para descrever a complexidade de tempo ou de espaço do algoritmo, 
+em termos de um limite superior assintótico. Em outras palavras, Big O dá uma ideia de como o tempo de execução ou o uso de memória de um
+algoritmo cresce à medida que o tamanho da entrada aumenta.
+
+    O(1) - Tempo constante: A execução do algoritmo é constante e não depende do tamanho da entrada.
+    O(log n) - Tempo logarítmico: A execução do algoritmo cresce logaritmicamente com o tamanho da entrada. Exemplos incluem a busca binária.
+    O(n) - Tempo linear: O tempo de execução cresce linearmente com o tamanho da entrada. Exemplos incluem a busca linear.
+    O(n log n) - Tempo linear-logarítmico: É mais lento que linear mas mais rápido que quadrático. Exemplos incluem o Merge Sort e o Quick Sort.
+    O(n^2) - Tempo quadrático: O tempo de execução cresce quadraticamente com o tamanho da entrada. Exemplos incluem a ordenação por inserção e por seleção.
+    O(2^n) - Tempo exponencial: O tempo de execução cresce exponencialmente com o tamanho da entrada. Exemplos incluem alguns algoritmos de força bruta.
+    O(n!) - Tempo fatorial: O tempo de execução cresce fatorialmente com o tamanho da entrada. Exemplos incluem a geração de todas as permutações possíveis de um conjunto.
+
+Big O é usado principalmente para comparar a eficiência dos algoritmos, especialmente para grandes entradas, permitindo a escolha de algoritmos mais eficientes para resolver problemas específicos.
+
+Para calcular a complexidade de um algoritmo, seguimos três passos principais:
+
+    Levar em consideração apenas as repetições do código:
+        Analisamos as estruturas de repetição (loops) e recursões, pois são as que mais impactam o desempenho do algoritmo.
+
+    Verificar a complexidade das funções/métodos próprios da linguagem (se utilizados):
+        Consideramos a complexidade das funções ou métodos nativos da linguagem de programação, como operações de busca em listas, ordenação, etc.
+
+    Ignorar as constantes e utilizar o termo de maior grau:
+        Descartamos termos constantes e de menor grau, focando apenas no termo de maior grau, que domina o crescimento da complexidade à medida que o tamanho da entrada aumenta.
+
+Adicionalmente, é importante compreender alguns conceitos fundamentais sobre a análise de complexidade:
+
+    A rapidez de um algoritmo não é medida em segundos, mas pelo crescimento do número de operações:
+        Em vez de medir o tempo de execução em unidades de tempo, avaliamos quantas operações o algoritmo executa em função do tamanho da entrada.
+
+    Discussão sobre o crescimento do tempo de execução conforme o número de elementos aumenta:
+        A análise de complexidade busca entender como o tempo de execução de um algoritmo escala quando o tamanho da entrada cresce.
+
+    Tempo de execução em algoritmos é expresso na notação Big O:
+        Utilizamos a notação Big O para descrever a complexidade assintótica do algoritmo, que fornece uma visão do comportamento do algoritmo em grandes entradas.
+
+O que é a Notação Big O?
+
+A notação Big O é uma forma matemática de descrever a eficiência de um algoritmo em termos de tempo de execução ou espaço de armazenamento em função do tamanho da entrada. Ela se concentra no comportamento assintótico do algoritmo, ou seja, como ele se comporta quando a entrada se aproxima do infinito. A notação Big O ajuda a comparar algoritmos e entender quais são mais eficientes para grandes entradas.
+Exemplos de Notações Comuns na Análise de Complexidade
+
+    O(1) - Constante:
+        O tempo de execução é constante, independentemente do tamanho da entrada.
+        Exemplo: Acesso direto a um elemento em um array.
+
+    O(log n) - Logarítmica:
+        O tempo de execução cresce de forma logarítmica em relação ao tamanho da entrada.
+        Exemplo: Busca binária em uma lista ordenada.
+
+    O(n) - Linear:
+        O tempo de execução cresce linearmente com o tamanho da entrada.
+        Exemplo: Percorrer todos os elementos de um array.
+
+    O(n log n) - Linearítmica:
+        O tempo de execução cresce mais rápido que linear, mas não tão rápido quanto quadrática.
+        Exemplo: Algoritmos eficientes de ordenação como Merge Sort e Quick Sort.
+
+    O(n^2) - Quadrática:
+        O tempo de execução cresce proporcionalmente ao quadrado do tamanho da entrada.
+        Exemplo: Algoritmos de ordenação simples como Bubble Sort e Selection Sort.
+
+    O(2^n) - Exponencial:
+        O tempo de execução dobra a cada incremento na entrada.
+        Exemplo: Resolver o problema do Caixeiro Viajante por força bruta.
+
+Comparação de Complexidades
+
+    O(log n) é mais rápido do que O(n):
+        Um algoritmo com complexidade logarítmica (O(log n)) realiza menos operações e, portanto, é mais eficiente do que um algoritmo linear (O(n)) conforme a entrada cresce.
+
+    O(log n) fica ainda mais rápido conforme a lista aumenta:
+        A diferença de desempenho entre um algoritmo logarítmico e um linear torna-se mais pronunciada conforme o tamanho da entrada aumenta.
+
+Importância da Análise de Complexidade
+
+    Eficiência:
+        Escolher algoritmos mais eficientes pode fazer uma grande diferença em termos de desempenho, especialmente em aplicações que lidam com grandes volumes de dados.
+
+    Escalabilidade:
+        Algoritmos com menor complexidade escalam melhor com o aumento da entrada, tornando-se mais adequados para aplicações que precisam crescer.
+
+Compreender e aplicar a análise de complexidade é essencial para desenvolver algoritmos eficientes e escaláveis, que são fundamentais para o desempenho de sistemas e aplicações em diversas áreas da computação.
