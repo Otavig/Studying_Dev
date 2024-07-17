@@ -1,6 +1,6 @@
 # Studying
-Eua
+## Eua:
 A repository for studying and learning mainly algorithms.
 
-Pt-Br
+## Pt-Br:
 Um repositório para estudo e criação de algoritmos.
