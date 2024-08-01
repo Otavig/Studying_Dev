@@ -55,7 +55,7 @@
 
         function criarGrid() {
             const gridContainer = document.getElementById('grid');
-            gridContainer.innerHTML = ''; // Limpa o conteúdo atual
+            gridContainer.innerHTML = ''; 
 
             for (let i = 0; i < matriz.length; i++) {
                 for (let j = 0; j < matriz[i].length; j++) {
@@ -63,7 +63,6 @@
                     cell.classList.add('grid-item');
                     cell.textContent = matriz[i][j] === 0 ? 'false' : 'true';
 
-                    // Adiciona um evento de clique para alternar o valor
                     cell.addEventListener('click', () => {
                         matriz[i][j] = matriz[i][j] === 0 ? 1 : 0;
                         cell.textContent = matriz[i][j] === 0 ? 'false' : 'true';
