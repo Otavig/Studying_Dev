@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Interativa</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .grid-container {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-gap: 5px;
+            margin: 20px auto;
+            color: white;
+        }
+        .grid-item {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid white;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        .grid-item.occupied {
+            background-color: brown;;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: brown;; text-align: center; margin-bottom: 50px; margin-top: 200px;">Title: Matriz Interativa</h1>
+    <div id="grid" class="grid-container"></div>
+
+    <script>
+        let matriz = [
+            [0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0]
+        ];
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function preencherMatrizes() {
+            for (let i = 0; i < matriz.length; i++) {
+                for (let j = 0; j < matriz[i].length; j++) {
+                    matriz[i][j] = getRandomInt(2);
+                }
+            }
+        }
+
+        function criarGrid() {
+            const gridContainer = document.getElementById('grid');
+            gridContainer.innerHTML = ''; // Limpa o conteúdo atual
+
+            for (let i = 0; i < matriz.length; i++) {
+                for (let j = 0; j < matriz[i].length; j++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('grid-item');
+                    cell.textContent = matriz[i][j] === 0 ? 'false' : 'true';
+
+                    // Adiciona um evento de clique para alternar o valor
+                    cell.addEventListener('click', () => {
+                        matriz[i][j] = matriz[i][j] === 0 ? 1 : 0;
+                        cell.textContent = matriz[i][j] === 0 ? 'false' : 'true';
+                        cell.classList.toggle('occupied');
+                    });
+
+                    gridContainer.appendChild(cell);
+                }
+            }
+        }
+
+        // preencherMatrizes();
+        criarGrid();
+    </script>
+</body>
+</html>
