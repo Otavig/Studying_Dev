@@ -1,0 +1,21 @@
+
+Item postado: 13:09
+Atribuído
+Cenário: Sistema de Gerenciamento de Biblioteca
+Você foi contratado para desenvolver um sistema simples de gerenciamento de biblioteca. O sistema deve permitir que os usuários realizem ações básicas como emprestar livros, devolver livros e consultar o catálogo de livros disponíveis. Para começar, você precisa modelar o sistema identificando os atores, os casos de uso e a sequência de ações.Passos do Exercício:
+Identifique os atores desse cenário
+:
+Emprestar Livro
+Devolver Livro
+Consultar Catálogo
+Cadastrar Livro (exclusivo para o ator X)
+Registrar Usuário (exclusivo para o ator X)
+:
+Crie um diagrama de casos de uso que mostre as interações entre os atores e todos os casos de uso.
+:
+Para cada caso de uso, elabore um diagrama de sequência que detalhe os passos envolvidos.
+Instruções:: Liste todos os atores que interagem com o sistema.: Para cada ator, defina as ações que eles podem realizar no sistema.: Use uma ferramenta de modelagem (como Lucidchart, Draw.io, Miro) para criar o diagrama de casos de uso.: Para cada caso de uso, detalhe a sequência de ações e as interações entre o ator e o sistema.
+
+Exemplo na imagem
+
+Requisitos.png
