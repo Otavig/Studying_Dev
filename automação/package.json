@@ -1,0 +1,14 @@
+{
+  "name": "teste_software",
+  "version": "1.0.0",
+  "description": "Aplicação para testar apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Otávio Garcia Dos Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
