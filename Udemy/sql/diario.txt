@@ -1,0 +1,80 @@
+Aula 1, Arquitetura de software:
+
+Um sistema que tem uma tela de informações, um usuario e uma senha. Requisição que vai para o banco quando o ok é pressionado
+e cai no banco composto por tabelas, onde vai ter um usuario e uma senha, onde vai haver uma comparação entre a senha e usuario digitado e o do banco.
+Papel do banco é gerenciar os dados e o do front end é exibir tudo o que está dentro do banco.
+
+SGBD sistema gerenciador de banco de dados
+
+
+----
+Pensando na arquitetura de software padrão MVC
+Temos 3 camadas 
+
+View, Model e Controller;
+
+Na camada View: Temos o que o usuario vê, no caso as Requisições para o controller (html, css, jquery, js);
+
+Na camada Controller: Temos as regras de negocio, qualquer gerenciamento de sistema de encontra aqui (java, php, c#, ruby, node);
+
+Na camada Model: Encontramos as classes modelos, são classes simples que representam objeto, pessoa, carro e etc... São representadas por tabelas nos banco de dados.
+
+
+Aula 2, Modelagem conceitual, lógica e Física:
+
+Como surge um banco de dados?
+
+Empresa Ɔ usuarios - Equipe de marketing que funciona em outra filial, e precisa ter acesso aos clientes, mas n tem acesso e não pode ter acesso ao sistema principal.
+Manager vai analisar 
+
+{softwares de pratilheira}
+
+Papel que passa na mão de todos para ter os requisitos;
+
+Escopo -> começa e termina projeto. pago por hora.
+
+Aula 3, Modelagem Física:
+
+Banco de dados Ɔ varias tabelas, sql é um SGBD que tem varios bancos, ele já vem com bancos instalados pois ele mesmo precisa.
+
+O restante está tudo em note1.sql;
+
+Aula 4, TIPAGEM  E Comparando CHAR E VARCHAR:
+
+Para caracteres literais temos o char e o varchar e para numeros o int e o float, para objetos como foto e documentos temos o blob, para texto extensos temos o text
+O turning é responsavel por deixar o banco mais rapido e com algumas coisas simples podemos deixar o banco sem a participação tão ativa desse profissional;
+
+Cada caracter dentro do banco de dados tem 1 byte e se eu entro com um dado "João", estou entrando com 4 bytes dentro do banco;
+
+Quando tipamos a tabala de um formato errado aumentamos a quantiade de dados que será baixada do banco de dados consequentimente prologando o tempo do usuario;
+Var vem do ingles que significa variante
+
+Se colocamos 
+
+CHAR(10)
+
+J O A O , , , , , ,  -> Ainda continua 10 BYTES então teremos 6 espaços em branco vagando
+
+Varchar(10)
+
+J O A O , , , , , , -> J O A O   -> 4 BYTES 
+
+
+Mesmo assim o char é mais perfomatico pois não gasta tempo variando de tamanho, então sempre usar quando o valor n vai variar nunca, tipo Sexo da pessoa como M e F ou Estado em sigla como SP, MG e por ai vai
+
+Aula 5, TIPAGEM Enum e Númericos:
+
+Nome enum vem de enumeração - conjunto de dados enumerados ou seja um conjunto fixo de dados, usamos quando queremos limitar os dados em uma coluna
+
+Mais para frente veremos comandos como count(*) - conta o numero de registros e Group BY - Agrupa os registros por condição
+
+Enum acaba com problema de varias opções para escrever a mesma coisa, e funciona como uma choseen box que estão disponiveis e nunca digitados
+
+Conjunto delimitado de valores e esta disponivel apenas no MYSQL o enum, já em outros bancos como exemplo oracle se chama constraint de check
+
+Tipos númericos - float e int
+
+float(10, 2) 10 casas no total e 2 casas apos a virgula
+
+
+Números que n precisam ser calculados podem ser tipados como varchar!
