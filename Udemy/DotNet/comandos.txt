@@ -1,0 +1,5 @@
+dotnet run program.cs
+
+dotnet build
+
+http://localhost:5000/weatherforecast rota funcional

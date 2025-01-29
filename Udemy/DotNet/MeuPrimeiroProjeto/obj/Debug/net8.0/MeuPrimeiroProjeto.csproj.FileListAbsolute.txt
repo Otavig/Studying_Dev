@@ -1,0 +1,15 @@
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/bin/Debug/net8.0/MeuPrimeiroProjeto
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/bin/Debug/net8.0/MeuPrimeiroProjeto.deps.json
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/bin/Debug/net8.0/MeuPrimeiroProjeto.runtimeconfig.json
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/bin/Debug/net8.0/MeuPrimeiroProjeto.dll
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/bin/Debug/net8.0/MeuPrimeiroProjeto.pdb
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.AssemblyInfoInputs.cache
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.AssemblyInfo.cs
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.csproj.CoreCompileInputs.cache
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.sourcelink.json
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.dll
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/refint/MeuPrimeiroProjeto.dll
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.pdb
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.genruntimeconfig.cache
+/home/ot-vio-garcia/Documentos/GitHub/Studying_Dev/Udemy/DotNet/MeuPrimeiroProjeto/obj/Debug/net8.0/ref/MeuPrimeiroProjeto.dll

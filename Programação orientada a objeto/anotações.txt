@@ -1,0 +1,73 @@
+Uma classe é um modelo do que será o objeto futuramente
+
+Quando instancia uma classe ela passa a não ser mais uma classe e vira um objeto
+
+public pode ser modificado fora do escopo de propriedades das classes
+private não pode ser modificado fora do escopo de propriedades da classe
+
+Encapsulamento (private) vem para trazer mais segurança para o código e não deixar essas propriedades visiveis para alguém conseguir alterar, como no exemplo a seguir
+
+public class Banco {
+	private decimal saldo;
+}
+
+Banco conta = new Banco();
+conta.saldo = 100.0; // Isso vai dar em erro por estar privado, se estivesse publico alteraria.
+
+Herança quando criar uma outra classe, para simplificar o código, a gente coloca que ela herda caracteristicas de outra classe (Serve para reaproveitar código)
+
+Polimorfismo ela vai fazer uma herança vai herdar a classe, mas não necessariamente precisa fazer os mesmo detalhes dos metodos e caso você n alterar ele acaba sendo apenas uma herança
+
+A classe abstrata define um contrato que as classes derivadas devem seguir. Ela pode conter métodos abstratos (sem implementação) e métodos concretos (com implementação).
+
+--#################------------------- explicação mais profissional
+
+Classe: É um modelo ou "planta" que define a estrutura e o comportamento de algo. Ela descreve quais propriedades (atributos) e métodos (ações) um objeto terá.
+
+Objeto: É uma instância de uma classe. Quando você cria um objeto a partir de uma classe, ele passa a existir na memória e pode armazenar dados específicos.
+    
+public class Carro 
+{
+    public string Modelo { get; set; }
+    public int Ano { get; set; }
+}
+
+Carro meuCarro = new Carro(); // Aqui, 'meuCarro' é um objeto da classe 'Carro'.
+meuCarro.Modelo = "Fusca";
+meuCarro.Ano = 1980;
+
+Modificadores de Acesso: public e private
+
+    public: Propriedades ou métodos marcados como public podem ser acessados e modificados fora da classe. Isso significa que qualquer parte do código pode interagir com eles.
+
+    private: Propriedades ou métodos marcados como private só podem ser acessados ou modificados dentro da própria classe. Isso é útil para proteger dados sensíveis e garantir que eles não sejam alterados de forma incorreta.
+    
+Encapsulamento
+O encapsulamento é um conceito que visa proteger os dados de uma classe, expondo apenas o necessário para o mundo externo. Isso é feito usando modificadores de acesso como private e métodos públicos (public) para controlar como os dados são acessados ou modificados.
+
+Benefícios:
+
+    Segurança: Impede que dados sensíveis sejam alterados diretamente.
+
+    Controle: Permite adicionar regras ou validações ao modificar dados.
+
+    Manutenção: Facilita a mudança interna da classe sem afetar outras partes do código.
+    
+Herança
+A herança permite que uma classe herde propriedades e métodos de outra classe, facilitando a reutilização de código. A classe que herda é chamada de classe derivada (ou filha), e a classe que é herdada é chamada de classe base (ou pai).
+
+Em c# fica com {Classe : Classe} e em Java e JavaScript colocamos {Classe extends Classe}
+
+Polimorfismo
+
+O polimorfismo permite que métodos herdados de uma classe base sejam sobrescritos ou redefinidos na classe derivada. Isso significa que a mesma ação pode ter comportamentos diferentes dependendo da classe.
+
+A classe abstrata define um contrato que as classes derivadas devem seguir. Ela pode conter métodos abstratos (sem implementação) e métodos concretos (com implementação).
+
+O que é um método abstrato?
+
+    Um método abstrato é um método que não tem implementação na classe onde é declarado. Ele só define a assinatura (nome, parâmetros e tipo de retorno).
+
+    Métodos abstratos devem ser implementados nas classes derivadas (filhas) que herdam da classe abstrata.
+
+    Uma classe que contém pelo menos um método abstrato deve ser declarada como abstrata.
