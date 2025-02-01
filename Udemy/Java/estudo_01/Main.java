@@ -1,8 +1,8 @@
 package default_teste;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Locale;
-import java.time.LocalTime;
 
 public class Main {
     public static void main(String[] args) {

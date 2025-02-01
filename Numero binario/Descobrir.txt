@@ -1,0 +1,22 @@
+No sistema decimal, os números são representados como uma soma de potências de 10. 
+138=(1×10^2)+(3×10^1)+(8×10^0)
+
+Agora, vejamos um exemplo em binário (base 2). O sistema binário funciona da mesma forma, mas usando potências de 2 em vez de 10.
+
+Vamos pegar o número decimal 13 e representá-lo em binário:
+
+    Escrevemos 13 como uma soma de potências de 2:
+
+13=(1×2^3)+(1×2^2)+(0×2^1)+(1×2^0)
+
+    Convertendo para binário, cada coeficiente representa um bit:
+
+1101~2
+
+Isso significa que 13 (decimal) = 1101 (binário).
+
+Outro exemplo com 47 (decimal):
+47=(1×2^5)+(0×2^4)+(1×2^3)+(1×2^2)+(1×2^1)+(1×2^0)
+
+4710=101111~2
+
