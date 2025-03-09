@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.sqlbook": "sql",
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
+        ".fantomasignore": "ignore",
+        "bit": "cpp",
+        "concepts": "cpp",
+        "cstdio": "cpp",
+        "type_traits": "cpp",
+        "new": "cpp",
+        "typeinfo": "cpp",
+        "stdbool.h": "c"
+    }
+}
