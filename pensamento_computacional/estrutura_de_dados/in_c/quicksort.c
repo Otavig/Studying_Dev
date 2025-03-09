@@ -14,7 +14,7 @@ void initial() {
     }
 }
 
-void insertValue(int value) { // Formate lipo
+void insertValue(int value) { // Formate lifo
     list = (int**)realloc(list, sizeof(int*) * (size + 1));
     
     if(list == NULL) {
