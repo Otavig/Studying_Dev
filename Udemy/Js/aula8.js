@@ -23,12 +23,15 @@ console.log(typeof nome, nome);
 
 
 // Array altera o valor da memoria.
+// Exemplo se eu alterar ou adicionar um item para a varaivel B que aponta para a variavel A
+// Ele vai adicionar o valor na A, por que o B aponta para Lá, lembrando isso é em arrays
+// Um conceito bem parecido acontece na linguagem C
 const a = [1,2];
 const b = a;
 
 console.log(a,b)
 
-b.push(3);
+b.push(3); // Adicinando um elemento a mais para o vetor(Array)
 console.log(a, b);
 
 // Sem array não aponta para memoria e não interfere
