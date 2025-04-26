@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar url</title>
+</head>
+<body>
+    <div>
+        <h1>Encurte aqui</h1>
+        <input id="inp_url" style="padding: 10px; margin: 20px; width: 300px;" type="text" placeholder="Digite a url do site que quer encurtar">
+        <button onclick="enviar()" style="background-color: blue; border: 1px solid white; color: white; padding: 10px; border-radius: 20px; cursor: pointer;">Encurtar</button>
+        
+        <br>
+
+        <p id="display"></p>
+    </div>
+
+    <script>
+        async function enviar() {
+            let url = document.getElementById("inp_url").value;
+
+            let res = await fetch("http://localhost:3000/og", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ route: url })
+            })
+            
+            let data = await res.json();
+
+            document.getElementById("display").innerText = JSON.stringify(data, null, 2);
+            document.getElementById("inp_url").value = "";
+        }
+    </script>
+</body>
+</html>
