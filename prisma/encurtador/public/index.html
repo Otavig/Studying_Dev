@@ -3,16 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar url</title>
+    <title>Encurtador de URL</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            display: flex;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        #inp_url {
+            padding: 15px;
+            border: none;
+            flex-grow: 1;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #display {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #495057;
+            white-space: pre-wrap;
+            text-align: left;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h1>Encurte aqui</h1>
-        <input id="inp_url" style="padding: 10px; margin: 20px; width: 300px;" type="text" placeholder="Digite a url do site que quer encurtar">
-        <button onclick="enviar()" style="background-color: blue; border: 1px solid white; color: white; padding: 10px; border-radius: 20px; cursor: pointer;">Encurtar</button>
-        
-        <br>
-
+    <div class="container">
+        <h1>Encurte sua URL</h1>
+        <div class="input-group">
+            <input id="inp_url" type="text" placeholder="Digite a URL completa">
+            <button onclick="enviar()">Encurtar</button>
+        </div>
         <p id="display"></p>
     </div>
 
@@ -27,7 +92,7 @@
                 },
                 body: JSON.stringify({ route: url })
             })
-            
+
             let data = await res.json();
 
             document.getElementById("display").innerText = JSON.stringify(data, null, 2);
