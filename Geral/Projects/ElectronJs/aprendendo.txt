@@ -1,0 +1,9 @@
+Bom pelo que vi existe um site para acessar em primeira mão que é o 
+
+- https://www.electronjs.org/
+
+Ele roda node js em um chromium embaixo dos panos e ele é praticamente o software rodando no binario "By embedding Chromium and Node.js into its binary, Electron allows you to maintain one JavaScript codebase and create cross-platform apps that work on Windows, macOS, and Linux — no native development experience required."
+
+Pelo que vi também eles tem um própria IDE de desenvolvimento que se chama Electron Fiddle. Para sua inicialização é bem fácil, vocẽ necessita dar NPM INIT como qualquer outro projeto node e em seguinda você precisa installar o electron com NPM INSTALL ELECTRON --SAVE-DEV e esse --SAVE-DEV é para declara que isso é só para desenvolvimento e não para produção
+
+E o legal disso é que vou misturar com REACT + TYPESCRIPT, vamos ver como isso vai ficar
